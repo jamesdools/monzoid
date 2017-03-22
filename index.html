@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Monzo Map</title>
+    <link rel="stylesheet" type="text/css" href="public/css/main.css">
+</head>
+<body>
+    <div class="main-container">
+        <div id="map" class="map"></div>
+        <div class=nav-bar></div>
+        <div class="data-container">
+            <div class="left-container">
+                <div class="login-container">
+                    <p class="login-client-text">
+                        To display your Monzo activity you need a Client ID and Secret, which can be generated <a href="https://developers.getmondo.co.uk/">here</a>.
+                    </p>
+                    <input class="login-input input-client-id" type="text" placeholder="Client ID"/>
+                    <input class="login-input input-client-secret" type="text" placeholder="Client secret" />
+                    <a class="login-button client-login-button" href="">Login</a>
+
+                    <p class="login-client-text">
+                         <em>Or</em>, you can use an access token.
+                    </p>
+                    <input class="login-input input-access-token" type="text" placeholder="Access Token" name="accessToken"/>
+                    <a class="login-button token-login-button" href="">Login</a>
+                </div>
+                <div class="chart-container">
+                    <div class="category-chart"></div>
+                    <span class="chart-label">Category Breakdown</span>
+                </div>
+            </div>
+            <div class="balance-container">
+                <div class="panel-balance-label balance-heading">Balance</div>
+                <div class="panel-balance">£36.20</div>
+                <div class="panel-spent-today-label balance-heading">Spent Today</div>
+                <div class="panel-spent-today">£4.20</div>
+                <div class="total-transactions-label balance-heading">Total Transactions</div>
+                <div class="total-transactions">0</div>
+                <div class="country-counter-label balance-heading">Countries Used In</div>
+                <div class="country-counter"></div>
+                <span class="country-flags"></span>
+            </div>
+            <div class="stats-container">
+                <div class="transaction-info">
+                    <div class="transaction-info__logo"></div>
+                    <h2 class="transaction-info__merchant"></h2>
+                    <span class="transaction-info__amount"></span>
+                    <span class="transaction-info__date"></span>
+                </div>
+            </div>
+            <div class="map__loader"></div>
+        </div>
+    </div>
+</body>
+<script src="./build/build.js"></script>
+</html>

@@ -1,0 +1,22 @@
+.map__loader {
+    display: none;
+    margin-top: -30px;
+    margin-left: -30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    border-top: 10px solid $monzo1;
+    border-right: 10px solid $monzo2;
+    border-bottom: 10px solid $monzo3;
+    border-left: 10px solid $monzo4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,177 @@
+.map__loader {
+  display: none;
+  margin-top: -30px;
+  margin-left: -30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-top: 10px solid #327787;
+  border-right: 10px solid #9abda9;
+  border-bottom: 10px solid #dfc586;
+  border-left: 10px solid #e83860;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 3s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.nav-bar {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  background: #fff;
+  border-bottom: solid 1px #e2e2e2;
+  box-shadow: 0 2px 2px -2px #e2e2e2; }
+
+.map {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 0;
+  left: 0; }
+
+.data-container {
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #f9fafc;
+  border-top: 1px solid #e2e2e2;
+  font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between; }
+  .data-container .left-container {
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -4px;
+    box-sizing: border-box; }
+    .data-container .left-container .login-container .login-heading {
+      color: #327787;
+      margin: 8px 32px; }
+    .data-container .left-container .login-container .login-input {
+      display: block;
+      margin: 0 auto;
+      width: 60%; }
+    .data-container .left-container .login-container .login-client-text,
+    .data-container .left-container .login-container .login-demo-text {
+      margin: 8px 32px;
+      font-size: 12px; }
+    .data-container .left-container .login-container .login-demo-text {
+      margin-top: 8px; }
+    .data-container .left-container .login-container .login-button {
+      display: block;
+      position: relative;
+      width: 60%;
+      margin: 0 auto;
+      cursor: pointer;
+      outline: none;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 2px;
+      background-color: #e83860;
+      color: white;
+      border: 0; }
+      .data-container .left-container .login-container .login-button:focus, .data-container .left-container .login-container .login-button:hover {
+        color: #004f4f; }
+    .data-container .left-container .chart-container {
+      text-align: center;
+      display: none; }
+      .data-container .left-container .chart-container .category-chart {
+        margin: 0 auto;
+        height: 220px;
+        width: 240px; }
+      .data-container .left-container .chart-container .chart-label {
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px; }
+  .data-container .balance-container {
+    height: 100%;
+    width: 20%;
+    background: #f9fafc;
+    text-align: center; }
+    .data-container .balance-container .balance-heading {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #327787; }
+    .data-container .balance-container .country-flags {
+      display: block;
+      font-size: 36px !important; }
+  .data-container .stats-container {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 40%;
+    height: 100%;
+    vertical-align: top;
+    position: relative; }
+    .data-container .stats-container .transaction-info {
+      padding: 8px 8px 8px 8px;
+      margin: 0 10px;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      width: 90%;
+      height: 90%;
+      background-color: #fff;
+      text-align: center;
+      border-radius: 20px; }
+      .data-container .stats-container .transaction-info .transaction-info__logo {
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+        padding: 4px 8px; }
+        .data-container .stats-container .transaction-info .transaction-info__logo img {
+          width: 100%; }
+      .data-container .stats-container .transaction-info .transaction-info__merchant {
+        color: #000;
+        display: inline;
+        padding: 4px 8px;
+        margin-bottom: 8px; }
+      .data-container .stats-container .transaction-info .transaction-info__amount {
+        padding: 4px 8px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #327787;
+        display: block; }
+      .data-container .stats-container .transaction-info .transaction-info__date {
+        padding: 4px 8px;
+        display: block;
+        font-weight: lighter;
+        font-size: 12px; }
+      .data-container .stats-container .transaction-info .transaction-info__category {
+        padding: 4px 8px;
+        display: block; }
+
+html,
+body,
+.main-container {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  min-width: 600px; }
+
+.tooltip {
+  display: none;
+  font-size: 12px;
+  text-align: center;
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  color: #333;
+  padding: 10px;
+  position: relative;
+  top: -145px;
+  width: 90px;
+  z-index: 10; }
+  .tooltip .tooltipLabel {
+    font-weight: bold; }

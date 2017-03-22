@@ -1,0 +1,32 @@
+{
+  "name": "monzoid",
+  "version": "1.0.0",
+  "description": "dollar dollar bills yall",
+  "author": "jamesdools",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -o build/build.js",
+    "watch": "concurrently 'watchify index.js -o build/build.js' 'live-server' --kill-others",
+    "sass": "node-sass --include-path src/scss src/scss/main.scss public/css/main.css",
+    "watch-sass": "nodemon -e scss --exec npm run sass"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "currency-symbol-map": "^3.1.0",
+    "d3": "^4.4.0",
+    "emoji-flags": "^1.2.0",
+    "google-maps": "^3.2.1",
+    "i18n-iso-countries": "^1.10.1",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.2",
+    "moment": "^2.17.1",
+    "mondo-bank": "^0.1.11"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "concurrently": "^3.1.0",
+    "node-sass": "^3.13.0",
+    "watchify": "^3.7.0"
+  }
+}

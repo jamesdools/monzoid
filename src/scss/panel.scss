@@ -1,0 +1,170 @@
+$border: 1px solid #e2e2e2;
+$loginMargin: 8px 32px;
+$loginSideMargin: 0 32px;
+
+.data-container {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #f9fafc;
+    border-top: $border;
+
+    font-family: $font--sans;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .left-container {
+        width: 40%;
+        height: 100%;
+        background-color: $white;
+        box-sizing: border-box;
+        display: inline-block;
+        margin-right: -4px;
+        box-sizing: border-box;
+
+        .login-container {
+            .login-heading {
+                color: $monzo1;
+                margin: $loginMargin;
+            }
+
+            .login-input {
+                display: block;
+                margin: 0 auto;
+                width: 60%;
+            }
+
+            .login-client-text,
+            .login-demo-text {
+                margin: $loginMargin;
+                font-size: 12px;
+            }
+
+            .login-demo-text {
+                margin-top: 8px;
+            }
+
+            .login-button {
+                display: block;
+                position: relative;
+                width: 60%;
+                margin: 0 auto;
+                cursor: pointer;
+                outline: none;
+                text-align: center;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 2px;
+                background-color: $monzo4;
+                color: white;
+                border: 0;
+
+                &:focus,
+                &:hover {
+                    color: $gradientF;
+                }
+            }
+        }
+
+        .chart-container {
+            text-align: center;
+            display: none;
+
+            .category-chart {
+                margin: 0 auto;
+                height: 220px;
+                width: 240px;
+            }
+
+            .chart-label {
+                text-align: center;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .balance-container {
+        height: 100%;
+        width: 20%;
+        background: #f9fafc;
+        text-align: center;
+
+        .balance-heading {
+            margin-top: 8px;
+            font-weight: bold;
+            color: $monzo1;
+        }
+
+        .country-flags {
+            display: block;
+            font-size: 36px !important;
+        }
+    }
+
+    .stats-container {
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: $white;
+        width: 40%;
+        height: 100%;
+        vertical-align: top;
+        position: relative;
+
+        .transaction-info {
+            $transitionPadding: 4px 8px;
+            padding: 8px 8px 8px 8px;
+            margin: 0 10px;
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            width: 90%;
+            height: 90%;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 20px;
+
+            .transaction-info__logo {
+                height: 50px;
+                width: 50px;
+                margin: 0 auto;
+                padding: $transitionPadding;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            .transaction-info__merchant {
+                color: #000;
+                display: inline;
+                padding: $transitionPadding;
+                margin-bottom: 8px;
+            }
+
+            .transaction-info__amount {
+                padding: $transitionPadding;
+                font-weight: bold;
+                font-size: 18px;
+                color: $monzo1;
+                display: block;
+            }
+
+            .transaction-info__date {
+                padding: $transitionPadding;
+                display: block;
+                font-weight: lighter;
+                font-size: 12px;
+            }
+
+            .transaction-info__category {
+                padding: $transitionPadding;
+                display: block;
+            }
+        }
+    }
+}

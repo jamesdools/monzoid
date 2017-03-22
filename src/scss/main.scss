@@ -1,0 +1,32 @@
+@import "variables";
+@import "loader";
+@import "map";
+@import "panel";
+
+html,
+body,
+.main-container {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    min-width: 600px;
+}
+
+.tooltip {
+    display: none;
+    font-size: 12px;
+    text-align: center;
+    background: #eee;
+    box-shadow: 0 0 5px #999999;
+    color: #333;
+    padding: 10px;
+    position: relative;
+    top: -145px;
+    width: 90px;
+    z-index: 10;
+
+    .tooltipLabel {
+        font-weight: bold;
+    }
+}
+
