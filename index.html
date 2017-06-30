@@ -13,18 +13,19 @@
         <div class="data-container">
             <div class="left-container">
                 <div class="login-container">
-                    <p class="login-client-text">
-                        To display your Monzo activity you need a Client ID and Secret, which can be generated <a href="https://developers.getmondo.co.uk/">here</a>.
-                    </p>
-                    <input class="login-input input-client-id" type="text" placeholder="Client ID"/>
-                    <input class="login-input input-client-secret" type="text" placeholder="Client secret" />
-                    <a class="login-button client-login-button" href="">Login</a>
+                  <p class="login-client-text">
+                    Currently to display your Monzo activity, Monzoid uses an <strong>access token</strong>, which can be generated at the developer portal <a href="https://developers.getmondo.co.uk/">here</a>.
+                  </p>
+                  <input class="login-input input-access-token" type="text" placeholder="Access Token" name="accessToken"/>
+                  <a class="login-button token-login-button" href="">Login</a>
 
-                    <p class="login-client-text">
-                         <em>Or</em>, you can use an access token.
-                    </p>
-                    <input class="login-input input-access-token" type="text" placeholder="Access Token" name="accessToken"/>
-                    <a class="login-button token-login-button" href="">Login</a>
+                  <p class="login-client-text">
+                      Monzoid will also soon add support for login via Client ID and Secret.
+                  </p>
+                  <input class="login-input input-client-id login-disabled" type="text" placeholder="Client ID"/>
+                  <input class="login-input input-client-secret login-disabled" type="text" placeholder="Client secret" />
+                  <a class="login-button client-login-button login-disabled" href="">Login</a>
+
                 </div>
                 <div class="chart-container">
                     <div class="category-chart"></div>
@@ -33,13 +34,13 @@
             </div>
             <div class="balance-container">
                 <div class="panel-balance-label balance-heading">Balance</div>
-                <div class="panel-balance">£36.20</div>
-                <div class="panel-spent-today-label balance-heading">Spent Today</div>
-                <div class="panel-spent-today">£4.20</div>
+                <div class="panel-balance">£0.00</div>
+                <!-- <div class="panel-spent-today-label balance-heading">Spent Today</div>
+                <div class="panel-spent-today">£4.20</div> -->
                 <div class="total-transactions-label balance-heading">Total Transactions</div>
                 <div class="total-transactions">0</div>
                 <div class="country-counter-label balance-heading">Countries Used In</div>
-                <div class="country-counter"></div>
+                <div class="country-counter">0</div>
                 <span class="country-flags"></span>
             </div>
             <div class="stats-container">

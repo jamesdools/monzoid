@@ -18,6 +18,10 @@ function addLogin() {
         client.getAndDisplayBalance(token);
         client.getAndDisplayTransactions(token);
     });
+
+    clientLoginButton.on("click", (event) => {
+      event.preventDefault();
+    });
 }
 
 function init() {
